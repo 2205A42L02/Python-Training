@@ -1,0 +1,1189 @@
+**to convert to int**
+a=int(input("enter the number"))
+print(a)
+print(type(a))
+
+**this code by default prints in string**
+a=(input("enter the number"))
+print(a)
+print(type(a))
+
+**id (address of a number)**
+a=10
+print(id(a))
+a=20
+print(id(a))
+
+**list
+list1=[10,20,'abcd','efgh']
+print(list1)
+print(list1[1:4])
+print(list1[1])
+list1.append('cat')
+print(list1)
+list1.remove('efgh')
+print(list1)
+
+**tuple**
+tuple1=(1,2,3,'abc','defg')
+print(tuple1)
+print(tuple1[3])
+print(tuple1[1:5])
+
+
+**sets
+set1={10,20,10,'dog','true','dog'}
+print(set1)
+ 
+**Arithemetic operators
+a=int(input("enter the 1st number"))
+b=int(input("enter the 2nd number"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)#div
+print(a%b)#modulo div
+print(a//b)#floor div
+print(a**b)#power of
+print("a>b is",a>b)
+
+
+**relational operators**
+a=10
+b=20
+a=b
+print(a)
+print(b)
+print(a==b)
+
+**swap**
+a=10
+b=20
+temp=a
+a=b
+b=temp
+print(a)
+print(b)
+
+**swap using XOR
+a=10
+b=20
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)
+
+**if the i/p is 10 o/p should be 11
+a=10
+print(-~a)
+
+**even or odd using AND gate**
+a=int(input("enter a number"))
+if(a&1==0):
+    print("even")
+else:
+    print("odd")
+
+
+
+**leap year**
+n=int(input("enter the year"))
+if(n%4==0):
+    print("leap year")
+else:
+    print("not a leap year")
+
+
+
+**water melon problem**
+
+w=int(input("enter the weight"))
+if(w%2!=0 or w==2):
+    print("no")
+else:
+    x=w/2
+    if(x%2==0):
+        print("weight of 2 persons are", x,x)
+    else:
+        print("weight of 2 persons are",x-1,x+1)##to decide for whom to give 2 and 4 incase of 6
+
+o/p:
+enter the weight8
+weight of 2 persons are 4.0 4.0
+
+**elephant problem
+y=int(input("enter the distance"))
+if(y<=5):
+    print(1)
+elif(y%5==0):
+    print(y/5)
+else:
+    print(y//5+1)
+
+
+**rounf of of nearest value
+
+a=float(input("enter the number"))
+print(round(a))
+
+
+many decimal points means**
+
+a=float(input("enter the number"))
+print(round(a,2))
+o/p:enter the number5.5555
+5.56
+
+printing by #**
+a=list((input("enter numbers").split("#")))
+print(a)
+
+
+
+
+a,b,c=map(int,input("enter numbers").split("#"))
+map(datatype,sequence)
+
+
+**police(1) and crime(-1)**
+r=int(input("enter the recruiters"))
+availableofficers=0
+untretedcrimes=0
+for _ in range(r):
+    event=int(input())
+    if(event==-1):
+        if availableofficers > 0:
+            availableofficers -=1
+        else:
+            untreatedcrimes +=1
+    else:
+        availableofficers +=event
+
+**sum of n natural numbers**
+
+n=int(input("enter the no"))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+    print(sum)
+
+
+**factorial of a number
+n=int(input("enter the number"))
+result=1
+for i in range(1,n+1):
+    result=result*i---->result*=i
+    print(result)
+
+**Fibonacci series
+
+n=int(input("enter the number"))
+a,b=0,1
+for i in range(n):
+    print(a,end=" ")
+    a,b=b,a+b
+
+
+***count of numbers
+num=int(input("enter a no"))
+count=0
+while num!=0:
+    num//=10
+    count+=1
+print("number of digits",count)
+
+
+**reversed number**
+num=int(input("enter the no"))
+rev=0
+while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num=num//10
+print("reversed no:",rev)
+
+
+**table program
+num=int(input("enter the no"))
+print("multiplication table of",num)
+for i in range(1,11):
+    print(num,'x',i,'=',num*i)
+
+
+
+**limak and bob age after eating
+
+limak=int(input("enter the weight"))
+bob=int(input("enter the weight"))
+year=0
+while(limak<bob):
+    bob*=2
+    limak*=3
+    year+=1
+print(year)
+
+
+***xor of given number(1^2^3^4^5)
+n=int(input("enter the number"))
+x=0
+for i in range(1,n+1):
+    x^=i
+    print(x)
+
+
+**Xor by giving number
+N=int(input("enter the no."))
+if(N%4==1):
+    print(1)
+if(N%4==2):
+    print(N+1)
+if(N%4==3):
+    print(0)
+if(N%4==0):
+    print(N)
+
+
+
+***xor of(3^4^5^6)
+n=int(input("enter the number"))
+x=0
+for i in range(3,n+1):
+    x^=i
+    print(x)
+
+**both inputs from user**
+L=int(input("enter the L"))
+R=int(input("enter the R"))
+x=0
+for i in range(L,R+1):
+    x^=i
+    print(x)
+
+o/p:
+enter the L3
+enter the R6
+3
+7
+2
+4
+
+
+**list
+L=list(map(int,'123'))
+print(L)
+
+
+L=[12,13,15,6.58,'meghana']
+L[4]='laxmi'
+print(L)
+
+
+
+L=[12,13,15,6.58,'meghana']
+del L[1] 
+print(L)
+
+L=[1,2,3]
+L1=L
+L[0]=4
+print(L1)
+
+o/p:
+[4, 2, 3]
+
+
+**.append
+L=[1,'python','true',20]
+L.append([5,3,2,4])
+print(L)
+[1, 'python', 'true', 20, [5, 3, 2, 4]]
+
+**swap
+a=['hello',12,13,14]
+a[1],a[3]=a[3],a[1]
+print(a)
+o/p:
+['hello',14,13,12]
+
+
+a=input().split()
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+o/p:1 2 3 1 2 4 5
+['1', '2', '3', '4', '5']
+
+
+
+**.extend
+L=[1,'python','true',20]
+L.extend([5,3,4,2])
+print(L)
+[1, 'python', 'true', 20, 5, 3, 4, 2]
+>>> 
+
+**.insert
+L=[1,'python','true',20]
+L.insert(2,'program')
+print(L)
+[1, 'python', 'program', 'true', 20]
+
+
+**list
+L=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+print(L[0:31:5])
+o/p:[0, 5, 10, 15, 20, 25, 30]
+
+**nested list
+L=[12,13,12.2,[1,2,3],['abc',12],[34,25]]
+print(L)
+
+L1=[1,2,['a',['true']],3]
+print(L1)
+
+
+**no. will be added and sorted
+a=input().split()
+b=input().split()
+c=a+b
+c.sort()
+c=[int(i) for i in c]
+print(c)
+
+
+a=input().split()
+a.sort(key=len)
+print(a)
+
+
+**printing no's present odd times
+a=input().split()
+b=[]
+for i in a:
+    if a.count(i)!=0 and i not in b:
+        b.append(i)
+print(b)
+o/p:
+1 1 2 3 3 4 5
+['1', '2', '3', '4', '5']
+>>> 
+
+
+**first sort even odd in ascending order and even in descending order
+a=[4,2,8,6]
+a.sort()
+a.reverse()
+print(a)
+b=[1,7,5,3]
+b.sort()
+print(b)
+print(a+b)
+
+o/p:
+[8, 6, 4, 2]
+[1, 3, 5, 7]
+[8, 6, 4, 2, 1, 3, 5, 7]
+>>> 
+
+or
+a=list(map(int,input().split()))
+b=[]
+a.sort()
+for i in a:
+    if i%2==0:
+        b.insert(0,i)
+    else:
+        b.append(i)
+print(b)
+o/p:
+1 2 3 4 5 6 7 8 9
+[8, 6, 4, 2, 1, 3, 5, 7, 9]
+>>> 
+
+
+**mul the numbers in the given range
+a=list(map(int,input().split()))
+b=[]
+m,n=map(int,input().split())
+for i in a:
+    for i in range(m,n+1):
+        b.append(i)
+p=1
+for i in b:
+    p*=i
+    print(p)
+    
+***to find the max of nested list and print its index value
+n=int(input())
+a=[map(int,input().split())for i in range(n)]
+m=0
+for i in a:
+    s=sum(i)
+    if s>m:
+        m=s
+        ind=a.index(i)
+print(ind)
+
+o/p:
+3
+1 2 3
+1 1 4
+1 4 2
+2
+
+
+
+
+******TUPLES***
+t=(1,2,3,'hi',40)
+print(t.index('hi'))
+o/p:3
+
+
+**tuple to list
+tuple=(1,2,3)
+list=list(tuple)
+print(list)
+o/p:
+[1,2,3]
+
+**list to tuple
+list=(1,2,3)
+tuple=tuple(list)
+print(tuple)
+
+o/p:
+(1, 2, 3)
+
+**reverse of tuple
+a=tuple(map(int,input().split()))
+y=reversed(a)
+print(tuple(y))
+
+o/p:
+1 2 3
+(3, 2, 1)
+
+
+#repeated items in tuple
+a=tuple(map(int,input().split()))
+print(a.count(2))
+o/p:2
+
+or 
+t=(2,3,4,5,6,2,3,5,6)
+print(t)
+count=t.count(3)
+print(count)
+
+o/p:
+(2, 3, 4, 5, 6, 2, 3, 5, 6)
+2
+
+
+**converting list in to set**
+list=[1,1,2,2,2,3,4,7,7,5]
+set=set(list)
+print(set)
+o/p:{1, 2, 3, 4, 5, 7}
+
+**accessing dictionaries using loops
+d={1:'hi','a':123,100:32.4}
+for i in d:
+    print(i,':',d[i])
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+1 : hi
+a : 123
+100 : 32.4
+>>> 
+  ***popitem()
+d={1:'hi','a':123,100:32.4,2:12,3:'and'}
+d.popitem()
+print(d)
+
+o/p:
+{1: 'hi', 'a': 123, 100: 32.4, 2: 12}
+
+**nested dictionary
+d={1:'hi','a':123,100:{2:'abc','x':452,2.3:120},5.4:'python'}
+print(d[100]['x'])
+
+o/p:452
+
+##to add key to dictionary
+import operator
+d={}
+n=int(input("no of elements:"))
+for i in range(n):
+    k=input("enter the key for first dictionary:")
+    v=input("enter its value:")
+    d[k]=v
+key=input()
+value=input()
+d.update({key:value})
+print(d)
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+no of elements:3
+enter the key for first dictionary:hi
+enter its keys:13
+enter the key for first dictionary:hello
+enter its keys:17
+enter the key for first dictionary:you
+enter its keys:19
+me
+20
+{'hi': '13', 'hello': '17', 'you': '19', 'me': '20'}
+>>> 
+
+
+**finds max and repetation
+tuple=(1,2,3,4,5,6,1,2,3,2,3,2)
+max_count=max(tuple.count(item) for item in tuple)
+print(f"Maximum count:{max_count}")
+o/p:
+Maximum count:4
+
+***SETS**
+s={1,2,2,3,4}
+s.remove(1)
+print(s)
+
+o/p:
+{2,3,4}
+
+##check whether a givenn kkey is present or not
+##check whether a givenn kkey is present or not
+d={}
+n=int(input("no of elements:"))
+for i in range(n):
+    k=input("enter the key for first dictionary:")
+    v=input("enter its keys:")
+    d[k]=v
+key=input()
+if key in d:
+    print("yes")
+else:
+    print("no")
+
+o/p:>>> %Run -c $EDITOR_CONTENT
+
+>>> %Run -c $EDITOR_CONTENT
+no of elements:2
+enter the key for first dictionary:10
+enter its keys:2
+enter the key for first dictionary:30
+enter its keys:40
+30
+yes
+>>> 
+
+
+# #to generate and print a dictionary that contains a number between (1 and n) in the form of(x,x*x)
+
+n=int(input("input a number:"))
+d=dict()
+for x in range(1,n+1):
+    d[x]=x*x
+    print(d)
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+input a number:3
+{1: 1}
+{1: 1, 2: 4}
+{1: 1, 2: 4, 3: 9}
+>>> 
+
+
+d1={}
+d2={}
+n=int(input("no of elements:"))
+for i in range(n):
+    k=input("enter the key for first dictionary:")
+    v=input("enter its keys:")
+    d1[k]=v
+for i in range(n):
+    k=input("enter the key for first dictionary:")
+    v=input("enter its keys:")
+    d2[k]=v
+d3=d1.copy()
+d3.update(d2)
+print(d3)
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+no of elements:2
+enter the key for first dictionary:23
+enter its keys:34
+enter the key for first dictionary:56
+enter its keys:37
+enter the key for first dictionary:45
+enter its keys:57
+enter the key for first dictionary:55
+enter its keys:566
+{'23': '34', '56': '37', '45': '57', '55': '566'}
+>>> 
+
+
+# remove key from dictionary
+d={}
+n=int(input("no of elements:"))
+for i in range(n):
+    k=input("enter the key for first dictionary:")
+    v=input("enter its keys:")
+    d[k]=v
+key=int(input("enter the key to be deleted"))
+if key in d:
+    del d[key]
+print(d)
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+no of elements:2
+enter the key for first dictionary:34
+enter its keys:55
+enter the key for first dictionary:67
+enter its keys:34
+enter the key to be deleted34
+{'34': '55', '67': '34'}
+>>> 
+
+##to map 2 lists into a dictionary
+keys=input().split()
+values=input().split()
+d=dict(zip(keys,values))
+print(d)
+o/p:
+1 2
+3 4
+{'1': '3', '2': '4'}
+>>> 
+
+or
+
+l1=[1,2,3]
+l2=[4,5,6]
+d={}
+for i in range(0,3):
+    key=l1[i]
+    value=l2[i]
+    d[key]=value
+print(d)
+
+o/p:{1: 4, 2: 5, 3: 6}
+>>> 
+
+##to combine 2 dictionaries adding values for common keys
+dict1={'a':10,'b':20,'c':30}
+dict2={'b':5,'c':15,'d':25}
+combined_dict={}
+for key in dict1:
+    if key in dict2:
+        combined_dict[key]=dict1[key]+dict2[key]
+    else:
+        combined_dict[key]=dict1[key]
+for key in dict2:
+    if key not in combined_dict:
+        combined_dict[key]=dict2[key]
+    print("combined dictionary:",combined_dict)
+
+o/p:>>> %Run -c $EDITOR_CONTENT
+combined dictionary: {'a': 10, 'b': 25, 'c': 45}
+combined dictionary: {'a': 10, 'b': 25, 'c': 45}
+combined dictionary: {'a': 10, 'b': 25, 'c': 45, 'd': 25}
+>>> 
+      
+
+
+m="meghana is my name"
+print(m.partition("is"))
+
+o/p:('meghana ', 'is', ' my name')
+>>> 
+
+##multi line
+s='''hi
+this
+is megha'''
+print(s.splitlines())
+
+o/p:
+['hi', 'this', 'is megha']
+
+
+m="meghana"
+print(m.index('a')) ##first occurence of a
+print(m.rindex('a'))##last occurrence of a
+
+o/p:
+4
+6
+>>> 
+
+print('python programming'.capitalize())
+print('python cython'.find('th'))##first occuring
+print('python cython'.rfind('th'))##last occuring
+print('python cython'.count('th'))
+a='meghana'
+print(max(a))##prints the highest ascii value word
+print(min(a))##prints the lowest ascii value word
+print(len(a))
+
+o/p:Python programming
+2
+9
+2
+n
+a
+7
+
+##SLICING**
+
+s='meghana'
+print(s[:])
+print(s[2:])
+print(s[:7])
+print(s[2:7])
+print(s[-4:-2])
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+meghana
+ghana
+meghana
+ghana
+ha
+>>> 
+
+**len of a string
+def len1(str1):
+    count=0
+    for i in str1:
+        count+=1
+    return count
+str1=input()
+print(len1(str1))
+      o/p:
+meghana
+7
+>>> 
+
+**upper and lowercase
+n=input()
+print(n.upper())
+print(n.lower())
+o/p:
+byteXL
+BYTEXL
+bytexl
+
+>>> 
+
+BMW to lowercase
+s='m car is BMW'
+s2='BMW'
+s3=s.replace(s2,s2.upper())
+print(s3)
+
+m car is BMW
+
+##swapcase
+def swap(str1):
+    res=" "
+    for i in str1:
+        if i.isupper():
+            res+=i.lower()
+        else:
+            res+=i.upper()
+    return res
+str1=input()
+print(swap(str1))
+o/p:MeGhANA
+ mEgHana
+>>> 
+
+##program to move all spaces to the front of a given string in single traversal##
+s=input()
+spaces=''
+result=''
+for char in s:
+    if char==" ":
+        spaces+=char
+    else:
+        result+=char
+        
+final_string=spaces+result
+print(final_string)
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+my name is meghana
+   mynameismeghana
+>>> 
+ 
+##to count the paragraph
+str=input()
+count=1
+for i in range(len(str)):
+    if(str[i]==' '):
+        count+=1
+print(count)
+        
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+i am meghana
+3
+>>>
+
+##program to create a string from two given strings concatenating uncommon characters of the said things
+s1=input()
+s2=input()
+uncommon_chars="#".join(set(s1)^set(s2))   # is kept
+print(uncommon_chars)
+
+>> %Run -c $EDITOR_CONTENT
+hello
+world
+e#r#w#d#h
+>>> 
+
+ ##program to create a string from two given strings concatenating uncommon characters of the said things
+s1=input()
+s2=input()
+uncommon_chars="".join(set(s1)^set(s2)) # is not kept
+print(uncommon_chars)
+
+>>> %Run -c $EDITOR_CONTENT
+hello
+world
+herdw
+
+
+
+#max occurring character in a string
+s1=input()
+print(s1.lower())
+print(max(s1))
+o/p:
+treat
+treat
+t
+>>> 
+ 
+
+
+(or)
+
+
+s=input()
+print(s.lower())
+max_char=max(s,key=s.count)
+print(f"Maximum occuring character:{max_char}")
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+meghana
+meghana
+Maximum occuring character:a
+>>> 
+
+
+##prime number or not
+def check_prime():
+    num=int(input("enter a number:"))
+    if num>1:
+        for i in range(2,int(num**0.5)+1):
+            if num%i==0:
+                print(num,"it is not a prime number")
+                break
+        else:
+            print(num,"is a prime number")
+    else:
+        print(num,"is not a prime number")
+check_prime()
+        
+o/p:
+enter a number:4
+4 it is not a prime number
+>>> 
+
+##python program to demonstrate keyword arguments
+def student(firstname,lastname):
+    print(firstname,lastname)
+    
+#keyword arguments
+student(firstname='geeks',lastname='practice')
+student(lastname='practice',firstname='geeks')
+
+o/p:geeks practice
+geeks practice
+
+
+
+#remove all the consecutive duplicates from a gien string
+str=input()
+result=str[0]
+for i in range(1,len(str)):
+    if str[i]!=result[-1]:
+        result+=str[i]
+    print(result)
+    
+    o/p:
+>>> %Run -c $EDITOR_CONTENT
+aabbsca
+a
+ab
+ab
+abs
+absc
+absca
+>>> 
+
+def my_sum(*args):
+    result=0
+    #iterating over the python args tuple
+    for x in args:
+        result+=x
+    return result
+print(my_sum(1,2,3))
+o/p:
+6
+
+
+def concatenate(**words):
+    result=""
+    for arg in words.values():
+        result+=arg
+    return result
+print(concatenate(a="real",b="python",c="is",d="great",e="!"))
+
+o/p:realpythonisgreat!
+
+
+
+# Program to print factorial of a number
+# recursively.
+ 
+# Recursive function
+def recursive_factorial(n):
+  if n == 1:
+      return n
+  else:
+      return n * recursive_factorial(n-1)
+ 
+# user input
+num = 5
+ 
+# check if the input is valid or not
+if num < 0:
+  print("Invalid input ! Please enter a positive number.")
+elif num == 0:
+  print("Factorial of number 0 is 1")
+else:
+  print("Factorial of number", num, "=", recursive_factorial(num))
+o/p:5
+
+
+
+
+
+
+
+
+# Program to print sum of 5 natural number
+# recursively.
+ 
+# Recursive function
+def sum_natural(n):
+  if n == 1:
+      return n
+  else:
+      return n + sum_natural(n-1)
+ 
+# user input
+num = 5
+print("sum of 5 numbers", num, "=", sum_natural(num))
+o/p:>>> %Run -c $EDITOR_CONTENT
+sum of 5 number 5 = 15
+>>> 
+
+
+### Fibonacci series using recursion
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+def fibonacci_series(length):
+    series = []
+    for i in range(length):
+        series.append(fibonacci(i))
+    return series
+
+# Example usage
+length = 10  # Number of terms in the Fibonacci series
+result = fibonacci_series(length)
+print(result)
+
+o/p:>>> %Run -c $EDITOR_CONTENT
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+
+
+#12345 using recursion
+def print_natural_numbers(n, current=1):
+    if current > n:
+        return
+    print(current)
+    print_natural_numbers(n, current + 1)
+
+# Example usage
+n = 5  # Number of natural numbers to print
+print_natural_numbers(n)
+
+or   ##tail recursion  (fun is called later)
+
+def fun(n):
+    if(n>0):
+        fun(n-1)
+        print(n)
+
+n=int(input())
+fun(n)
+o/p:1
+2
+3
+4
+5
+
+
+#54321 using recursion
+def print_natural_numbers(n, current=5):
+    if current < n:
+        return
+    print(current)
+    print_natural_numbers(n, current - 1)
+
+# Example usage
+n = 1  # Number of natural numbers to print
+print_natural_numbers(n)
+
+or
+##head recursion    (fun is called first)
+def fun(n):
+    if(n>0):
+        print(n)
+        fun(n-1)
+
+n=int(input())
+fun(n)
+
+
+
+o/p:5
+4
+3
+2
+1
+
+
+
+
+
+##Fibonacci series using functions by sir
+
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+    
+num_terms=int(input("enter the number of terms:"))
+for i in range(num_terms):
+    print(f"fibonacci({i})={fibonacci(i)}")
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+enter the number of terms:5
+fibonacci(0)=0
+fibonacci(1)=1
+fibonacci(2)=1
+fibonacci(3)=2
+fibonacci(4)=3
+>>> 
+
+
+
+
+
+####OOPS######
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def say_hi(self):
+        print("Hello,my name is",self.name)
+p=Person('Meghana')
+p.say_hi()
+
+o/p:
+>>> %Run -c $EDITOR_CONTENT
+Hello,my name is Meghana
+>>> 
+
+
+
+
+
+class Parent:
+    def func1(self):
+        print("this is function 1")
+class Child(Parent):
+    def func2(self):
+         super().func1()
+         print("this is function 2")
+ob=Child()
+ob.func2()
+
+
+o/p:>>> %Run -c $EDITOR_CONTENT
+this is function 1
+this is function 2
+>>> 
+
+
+
+##chess gam of 2 friends
+# Reading input
+n = int(input().strip())
+s = input().strip()
+
+# Count the number of 'A' and 'D'
+anton_wins = s.count('A')
+danik_wins = s.count('D')
+
+# Determine the winner
+if anton_wins > danik_wins:
+    print("Anton")
+elif danik_wins > anton_wins:
+    print("Danik")
+else:
+    print("Friendship")
+
+o/p:>>> %Run -c $EDITOR_CONTENT
+>>> %Run -c $EDITOR_CONTENT
+6
+AAADDD
+Friendship
+>>> 
+
+
+
+
+
